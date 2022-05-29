@@ -11,7 +11,10 @@ import SwiftUI
 struct TwitterSwiftUICloneApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
+            .navigationViewStyle(.stack)
         }
     }
 }
